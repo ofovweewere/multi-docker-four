@@ -8,6 +8,9 @@ app.use(cors());
 app.use(bodyParser.json());
 // Parse URL-encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
+app.get("/", (req, res) => {
+  res.send("Hi");
+});
 app.use("/path", indexRoute);
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

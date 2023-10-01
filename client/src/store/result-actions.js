@@ -3,7 +3,7 @@ import { resultActions } from "./result-slice";
 export const fetchData = (payload) => {
   return async (dispatch) => {
     const fetchHandler = async () => {
-      const res = await fetch("/api/search", {
+      const res = await fetch("/api/path/search", {
         headers: {
           "Content-Type": "application/json",
         },

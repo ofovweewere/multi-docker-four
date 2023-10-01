@@ -1,0 +1,79 @@
+.custom-tooltip .MuiTooltip-tooltip {
+  background-color: blue;
+}
+
+.grid {
+  display: grid;
+
+  grid-auto-rows: 1fr; /* All grid rows will take equal space (including height) */
+  /*grid-template-columns: repeat(3, minmax(10rem, 1fr));*/
+
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: 14px;
+}
+
+.gridItem1 {
+  /*width: 100%;*/
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  /*height: 100%;*/
+  /*object-fit: cover;*/
+  /*also set max height*/
+}
+
+.gridItem2 {
+  /*width: 100%;*/
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.gridItem3 {
+  /*width: 100%;*/
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.gridItem4 {
+  /*width: 100%;*/
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.gridZIndex {
+  z-index: 20;
+}
+
+.show {
+  max-height: 500px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.hide {
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.search {
+  /* clears the ‘X’ from Internet Explorer */
+  input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  /* clears the ‘X’ from Chrome */
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+}
